@@ -4,7 +4,6 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import COLORS from '../constants/colors';
 import { Ionicons } from "@expo/vector-icons";
 import Button from '../components/Button';
-
 const Login = ({ navigation }) => {
     const [isPasswordShown, setIsPasswordShown] = useState(false);
     
@@ -98,12 +97,14 @@ const Login = ({ navigation }) => {
 
                 <Button
                     title="Entrar"
-                    filled
+                    onPress={() => navigation.navigate("Home")}
                     style={{
                         marginTop: 18,
                         marginBottom: 4,
                     }}
                 />
+
+
 
                 <View style={{
                     flexDirection: "row",
