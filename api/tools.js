@@ -9,7 +9,7 @@ function criarItemJson(nomeProduto, descricao, preco, estoque) {
     };
   
     const jsonItem = JSON.stringify(item);
-    criarItemAPI(jsonItem);
+    return criarItemAPI(jsonItem);
   }
 
 function criaPutJson(id, nomeProduto, descricao, preco, estoque) {

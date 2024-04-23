@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-async function criarItemAPI(itemJson) {
+ function criarItemAPI(itemJson) {
   try {
-    const response = await axios.post('http://127.0.0.1:8000/api/create', itemJson, {
+    const response = axios.post('http://127.0.0.1:8000/api/create', itemJson, {
       headers: {
         'Content-Type': 'application/json'
       }
