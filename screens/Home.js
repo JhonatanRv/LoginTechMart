@@ -6,7 +6,7 @@ const Home = ({ navigation }) => {
 
   const fetchItems = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/');
+      const response = await fetch('http://127.0.0.1:8000/api/produtos');
       const data = await response.json();
       setItems(data);
     } catch (error) {
